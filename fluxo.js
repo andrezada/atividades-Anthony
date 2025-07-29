@@ -1,3 +1,5 @@
+//André Luís de Moura Rodrigues
+
 //1. Implemente um programa que solicita um número ao usuário e seguida exibe uma mensagem
 //informando se o número é par ou ímpar.
 const numero = parseInt(prompt("Digite um número:"));
