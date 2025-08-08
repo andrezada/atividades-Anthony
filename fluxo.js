@@ -1,5 +1,3 @@
-//André Luís de Moura Rodrigues
-
 //1. Implemente um programa que solicita um número ao usuário e seguida exibe uma mensagem
 //informando se o número é par ou ímpar.
 const numero = parseInt(prompt("Digite um número:"));
@@ -85,8 +83,24 @@ else {
 //8. Crie um programa que simula um restaurante. O usuário escolhe um prato do menu (opções:
 //pizza, hambúrguer, salada, macarrão) usando a instrução switch. Para cada prato escolhido,
 //exiba o preço e a descrição do prato.
-
-//seila fazer isso loko
+let cardapio = prompt("escolha um prato: pizza, hamburguer, salada, macarrao")
+switch (cardapio){
+    case "pizza":
+        console.log("a pizza custa 20 reais")
+        break;
+    case "hamburguer":
+        console.log("o hamburguer custa 20 reais")
+        break;
+    case "salada":
+        console.log("a salada custa 10 reais")
+        break;
+    case "macarrao":
+        console.log("o macarrao custa 5 reais")
+        break;
+    default:
+        console.log("esse prato não esta no cardapio")
+        break;
+}
 
 //9. Escreva um programa que peça ao usuário sua altura e peso, calcule o IMC (Índice de Massa
 //Corporal) e classifique conforme a tabela da OMS (abaixo do peso, peso normal, sobrepeso,
@@ -106,17 +120,33 @@ else if (imc >= 25 && imc < 29.9) {
 
 //10. Escreva um programa que solicite ao usuário um número positivo e exiba todos os números
 //pares de 0 até o número informado (use o laço de repetição while).
+let numeropositivo = 0 
+while (numeropositivo <= 0 ){
+    numeropositivo = prompt("digite um numero positivo");
+}
+for (var i = 0; i<= numeropositivo; i++){
+    if (i % 2 == 0){
+        console.log(i)
+    }
+}
 
-//tamojuntoooooooo
+
 
 //11. Escreva um programa que solicite ao usuário um número positivo e exiba todos os números
 //ímpares de 0 até o número informado (use o laço de repetição for).
-
-//asiim voce que matar o cara po
+const NumPositivo = parseInt(prompt("digite um numero positivo:"))
+for (var i = 0; i<= NumPositivo; i++){
+    if (i % 2 !=0 ){
+        console.log(i)
+    }
+}
 
 //12. Crie um programa que calcule o fatorial de um número fornecido pelo usuário
-
-//desisti
+const numfatorial =  parseInt(prompt("digite um numero positivo:"))
+let fatorial = 1 
+    for (var i = 0; i<= numfatorial; i++) {
+        console.log(fatorial*=i)
+    }
 
 /*13. Implemente um jogo de adivinhação onde o computador gera um número aleatório entre 1 e
 100 e o usuário tem que adivinhar qual é em até 10 tentativas. Verifique se cada palpite do
