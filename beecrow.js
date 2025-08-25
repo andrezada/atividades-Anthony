@@ -223,6 +223,15 @@ for (let nota of notas) {
     console.log(`${count} nota(s) de R$ ${nota.toFixed(2)}`);
     valor -= count * nota;
 }
+console.log("MOEDAS:");
+for (let moeda of moedas) {
+    let count = Math.floor(valor / moeda);
+    console.log(`${count} moeda(s) de R$ ${moeda.toFixed(2
+)}`);
+    valor -= count * moeda;
+    valor = parseFloat(valor.toFixed(2)); 
+}
+
 
 //16. 1040 – Média 3
 
@@ -280,6 +289,7 @@ else {
     }
 }
 
+
 //18. 1047 – Tempo de Jogo com Minutos
 
 var input = require('fs').readFileSync('/dev/stdin', 'utf8');
@@ -309,6 +319,8 @@ while (true) {
     }
     result.push(`${sequence.join(' ')} Sum=${sum}`);
 }
+console.log(result.join('\n'));
+
 //20. 1160 – Crescimento Populacional
 
 var input = require('fs').readFileSync('/dev/stdin', 'utf8');
@@ -360,6 +372,7 @@ for (let t = 0; t < T; t++) {
     }
 }
 console.log(results.join('\n'));
+
 
 //22. 2059 – Ímpar, Par ou Roubo
 var input = require('fs').readFileSync('/dev/stdin', 'utf8');
