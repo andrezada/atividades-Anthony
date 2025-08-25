@@ -205,6 +205,11 @@ while (true) {
     else if (tipo === 3) diesel++;
     else if (tipo === 4) break;
 }
+console.log("MUITO OBRIGADO");
+console.log(`Alcool: ${alcool}`);
+console.log(`Gasolina: ${gasolina}`);
+console.log(`Diesel: ${diesel}`);
+
 //15. 1021 – Notas e Moedas
 
 var input = require('fs').readFileSync('/dev/stdin', 'utf8');
@@ -285,8 +290,7 @@ let fim = h2 * 60 + m2;
 let duracao = (fim - inicio + 1440) % 1440 || 1440;
 let duracaoH = Math.floor(duracao / 60);
 let duracaoM = duracao % 60;
-console.log(`O JOGO DUROU ${duracaoH} HORA(S) E
-    ${duracaoM} MINUTO(S)`);
+console.log(`O JOGO DUROU ${duracaoH} HORA(S) E ${duracaoM} MINUTO(S)`);
 
 //19. 1101 – Sequência de Números e Soma
 
